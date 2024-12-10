@@ -51,3 +51,27 @@ figure.fotolegenda figcaption{
  figure.fotolegenda:hover figcaption{
     opacity: 1;
  }
+ /*Adicionando menu ao site
+ sempre que houver id utilizar o # 
+ ex: nav#menu */
+
+nav#menu{ 
+ display: block;
+    ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+     li{
+     display: inline-block;
+     background-color: #dddd;
+     padding: 10px;
+    margin: 2px;
+   
+  }
+ }
+ h1{
+    display: none;
+ }
+}
