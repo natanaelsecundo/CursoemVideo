@@ -55,23 +55,40 @@ figure.fotolegenda figcaption{
  sempre que houver id utilizar o # 
  ex: nav#menu */
 
-nav#menu{ 
- display: block;
-    ul{
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute;
     top: -20px;
     left: 500px;
-     li{
-     display: inline-block;
-     background-color: #dddd;
-     padding: 10px;
+}
+
+nav#menu ul li {
+    display: inline-block;
+    background-color: #dddd;
+    padding: 10px;
     margin: 2px;
-   
-  }
- }
- h1{
+}
+nav#menu li {
+    transition: background-color 2s;
+}
+
+nav#menu ul li:hover {
+    background-color: #606060;
+}
+nav#menu h1 {
     display: none;
- }
+}
+
+nav#menu a {
+    color:  #000000 ;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color:  #ffffff ;
+   
 }
