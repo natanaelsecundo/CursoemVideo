@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url('../_fonts/bubblegum-sans-regular.otf')
+} 
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
 
 p{
   text-align: justify; 
