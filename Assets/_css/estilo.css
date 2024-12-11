@@ -15,10 +15,53 @@ p{
     
 }*/
 body{
-    background-color: hsl(165,81%,93%);
-    color: rgba(0, 0, 0, 0.5);
+    background-color: #dddddd;
+    color: rgba(d   , 117, 117, 0.5);
     
 }
+
+
+div#interface{
+    width: 900px;
+    background-color: #ffffff;
+    margin:  -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 800px;
+	top: 70px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	color: #888888;
+	font-size: 15pt;
+	padding: 0px;
+	margin-top: 0px;
+}
+/* centraliznato utilizando margin
+ margin:  -20px auto 0px auto;
+margin:  top right dwon left;
+}*/
 /* <!-- A tag <figure> no HTML é usada para agrupar conteúdo relacionado, como imagens, gráficos, diagramas, ou trechos de código, junto com uma legenda opcional. -->
 <!--A tag <figcaption> no HTML é usada para fornecer uma legenda descritiva para o conteúdo dentro de um elemento <figure>. Ela ajuda a dar contexto adicional ao conteúdo visual ou textual agrupado em um <figure>.-->
    
@@ -54,41 +97,43 @@ figure.fotolegenda figcaption{
  /*Adicionando menu ao site
  sempre que houver id utilizar o # 
  ex: nav#menu */
-
-nav#menu {
-    display: block;
+/* Formatação do menu */
+nav#meu {
+	display: block;
 }
 
 nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 500px;
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 460px;
 }
 
-nav#menu ul li {
-    display: inline-block;
-    background-color: #dddd;
-    padding: 10px;
-    margin: 2px;
-}
 nav#menu li {
-    transition: background-color 2s;
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	-webkit-transition:background-color 1s;
+    -moz-transition:background-color 1s;
+    -o-transition:background-color 1s;
+    transition:background-color 1s;
 }
 
-nav#menu ul li:hover {
-    background-color: #606060;
+nav#menu li:hover {
+	background-color: #606060;
 }
+
 nav#menu h1 {
-    display: none;
+	display: none;
 }
 
 nav#menu a {
-    color:  #000000 ;
-    text-decoration: none;
+	color: #000000;
+	text-decoration: none;
 }
+
 nav#menu a:hover {
-    color:  #ffffff ;
-   
+	color: #ffffff;
 }
