@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+    <script>
+        var quebrada = false; //boolean
+        function muda(tipo){
+            //passagem de parametros
+            if (tipo == 1){
+                arquivo="../Assets/_imagens/lampada-acesa.jpg" 
+            }
+            if( tipo ==2){
+                arquivo="../Assets/_imagens/lampada-apagada.jpg" 
+            }
+            if(  tipo ==3){
+                arquivo="../Assets/_imagens/lampada-quebrada.jpg" 
+            }
+            if(!quebrada){
+              document.getElementById("luz").src = arquivo;
+                if(tipo == 3){
+                        quebrada = true;
+                }
+            }     
+         }
+             
+    </script>
+</head>
+<body>
+    <h1>Acenda a lâmpada</h1>
+    <img src="../Assets/_imagens/lampada-apagada.jpg" alt="Imagem de lampada apagada" id="luz" onmousemove="muda(1)" onclick="muda(3)" onmouseout="muda(2)"> 
+</body>
+</html>
