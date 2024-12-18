@@ -16,7 +16,7 @@
     <div id = "interface">
 
     <header id="cabecalho">    
-        <hdroup>
+        <hgroup>
          <h1>Google Glass</h1> 
          <h2>A revolução do Google está chegando</h2> 
         </hgroup>
@@ -57,8 +57,14 @@
     
     <section id="conteudo">
         <img src="./_imagens/glass-esquema-marcado.jpg" alt="imagem de de um oculos em planejamento
-        demarcado">
-        <iframe src="google-glass.html" frameborder="0" name="janela" id="framespec"></iframe>
+        demarcado" usemap="#meumapa">
+        <map name="meumapa">
+            <area shape="rect" coords="179,202,270,260" href="google-glass.html#tela" target="janela" alt="Tela do Google Glass">
+            <area shape="circle" coords="157,243,12" href="google-glass.html#camera" target="janela" alt="Câmera do Google Glass">
+            <area shape="circle" coords="75,50,18" href="google-glass.html#bateria" target="janela" alt="Bateria do Google Glass">
+            <area shape="poly" coords="27,143,82,216,83,251,26,167" href="google-glass.html#sensores" target="janela" alt="Sensores do Google Glass">
+  </map>
+        <iframe src="google-glass.html" frameborder="0" name="janela" id="framespec" ></iframe>
     </section>
 </section>
 
