@@ -15,7 +15,7 @@ ul#albumfotos li{
     background-color: #ffffff;
     float: left;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
-    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
     
 }
 
@@ -29,7 +29,7 @@ ul#albumfotos li span{
    padding: 5px;
 }
 ul#albumfotos li:hover {
-    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 
 }
 ul#albumfotos li:hover span{
